@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget FriendStory({FriendStory, proName, proPic}) {
+Widget FriendStory({FriendStory, proName, proPic, }) {
   return Padding(
     padding: const EdgeInsets.only(
       left: 5,
