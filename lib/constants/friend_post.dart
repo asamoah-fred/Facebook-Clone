@@ -133,6 +133,37 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
                 width: 390,
                 height: 30,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          width: 70,
+                          height: 30,
+                          color: Colors.blue,
+                        ),
+                      ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 170),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Container(
+                            width: 150,
+                            height: 30,
+                            color: Colors.blue,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: 390,
+                height: 30,
+                child: Row(
                   children: [
                     Container(
                       width: 130,
@@ -202,11 +233,6 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
                     ),
                   ],
                 ),
-              ),
-              Container(
-                width: 390,
-                height: 30,
-                color: Colors.pink,
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 5, bottom: 5),
