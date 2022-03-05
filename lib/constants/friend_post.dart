@@ -139,7 +139,7 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
                       height: 30,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           IconButton(
                             onPressed: () {},
@@ -159,12 +159,46 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
                     Container(
                       width: 130,
                       height: 30,
-                      color: Colors.red,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.comment,
+                              size: 20,
+                              color: Colors.black54,
+                            ),
+                          ),
+                          Text(
+                            "Comments",
+                            style: TextStyle(),
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       width: 130,
                       height: 30,
-                      color: Colors.blue,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.share,
+                              size: 20,
+                              color: Colors.black54,
+                            ),
+                          ),
+                          Text(
+                            "Share",
+                            style: TextStyle(),
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
