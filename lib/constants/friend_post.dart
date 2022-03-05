@@ -10,9 +10,9 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
       children: [
         Container(
           width: 390,
-          height: 450,
+          height: 510,
           // color: Colors.blue,
-          child: Row(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
@@ -105,6 +105,26 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
                     ),
                   ],
                 ),
+              ),
+              Container(
+                width: 390,
+                height: 390,
+                color: Colors.brown,
+              ),
+              Container(
+                width: 390,
+                height: 20,
+                color: Colors.green,
+              ),
+              Container(
+                width: 390,
+                height: 30,
+                color: Colors.pink,
+              ),
+              Container(
+                width: 390,
+                height: 5,
+                color: Colors.blue,
               ),
             ],
           ),
