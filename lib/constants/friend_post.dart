@@ -115,8 +115,10 @@ Widget FriendPost(
                     Container(
                       height: 20,
                       width: 390,
-                      color: Colors.blue,
-                      child: Text(caption),
+                      child: Text(
+                        caption,
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                     Container(
                       height: 380,
