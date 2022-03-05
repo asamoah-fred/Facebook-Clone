@@ -17,6 +17,8 @@ class HomeScreen extends StatelessWidget {
                 width: 390,
                 height: 50,
                 // color: Colors.blue,
+                // 1st layer Open
+
                 child: Row(
                   children: [
                     Column(
@@ -182,6 +184,60 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          // 2nd layer closed
+
+          // 3rd Layer Open
+          Row(
+            children: [
+              Container(
+                width: 390,
+                height: 10,
+                color: Colors.black26,
+              ),
+            ],
+          ),
+
+          // 3rd Layer Closed
+
+          // 4th Layer Open (Story)
+
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                Container(
+                  height: 150,
+                  width: 120,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 150,
+                  width: 120,
+                  color: Colors.blue,
+                ),
+                Container(
+                  height: 150,
+                  width: 120,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 150,
+                  width: 120,
+                  color: Colors.blue,
+                ),
+                Container(
+                  height: 150,
+                  width: 120,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 150,
+                  width: 120,
+                  color: Colors.blue,
+                ),
+              ],
+            ),
           ),
         ],
       ),
