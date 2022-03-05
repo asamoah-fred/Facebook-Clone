@@ -250,7 +250,26 @@ class HomeScreen extends StatelessWidget {
 
 // Post Layer Open
 
-          FriendPost(),
+          FriendPost(
+            proPic: 'images/autumn_30.jpg',
+            proName: 'Agyei Hannah',
+            dateAndLocation: 'yesterday at 9AM, Berlin',
+          ),
+          FriendPost(
+            proPic: 'images/autumn_27.jpg',
+            proName: 'Asamoah Micael',
+            dateAndLocation: 'today at 3AM, Kyiv',
+          ),
+          FriendPost(
+            proPic: 'images/autumn_29.jpg',
+            proName: 'Junior Tinho',
+            dateAndLocation: 'yesterday at 5PM, New York',
+          ),
+          FriendPost(
+            proPic: 'images/autumn_18.jpg',
+            proName: 'Asamoah Peter',
+            dateAndLocation: 'yesterday at 2PM, UK',
+          ),
 
 // Post Layer Closed
         ],

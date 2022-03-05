@@ -1,6 +1,9 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: sized_box_for_whitespace, prefer_const_constructors
 
-Widget FriendPost() {
+import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
+
+Widget FriendPost({proPic, proName, dateAndLocation}) {
   return Padding(
     padding: const EdgeInsets.only(top: 5, bottom: 5),
     child: Row(
@@ -8,7 +11,7 @@ Widget FriendPost() {
         Container(
           width: 390,
           height: 450,
-          color: Colors.blue,
+          // color: Colors.blue,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -21,24 +24,30 @@ Widget FriendPost() {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Container(
-                          width: 60,
-                          height: 60,
+                        Padding(
+                          padding: const EdgeInsets.only(
+                            left: 5,
+                            right: 5,
+                          ),
                           child: Container(
-                            width: 40,
-                            height: 40,
+                            width: 60,
+                            height: 60,
                             child: Container(
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(40),
-                                border: Border.all(
-                                  color: Colors.brown,
-                                  style: BorderStyle.solid,
-                                ),
-                                image: DecorationImage(
-                                  image: AssetImage(
-                                    'images/autumn_30.jpg',
+                              width: 40,
+                              height: 40,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(40),
+                                  border: Border.all(
+                                    color: Colors.brown,
+                                    style: BorderStyle.solid,
                                   ),
-                                  fit: BoxFit.cover,
+                                  image: DecorationImage(
+                                    image: AssetImage(
+                                      proPic,
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),
@@ -52,18 +61,30 @@ Widget FriendPost() {
                         Row(
                           children: [
                             Container(
-                              width: 247,
+                              width: 240,
                               height: 20,
-                              color: Colors.pink,
+                              child: Text(
+                                proName,
+                                style: TextStyle(
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ],
                         ),
                         Row(
                           children: [
                             Container(
-                              width: 247,
+                              width: 240,
                               height: 40,
-                              color: Colors.green,
+                              child: Text(
+                                dateAndLocation,
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  // fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ],
                         ),
@@ -75,7 +96,10 @@ Widget FriendPost() {
                         Container(
                           width: 80,
                           height: 60,
-                          color: Colors.brown,
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.more_horiz),
+                          ),
                         ),
                       ],
                     ),
