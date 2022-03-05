@@ -1,6 +1,9 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:facebook/constants/story.dart';
+
+myStory() {}
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -202,42 +205,46 @@ class HomeScreen extends StatelessWidget {
 
           // 4th Layer Open (Story)
 
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                Container(
-                  height: 150,
-                  width: 120,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 150,
-                  width: 120,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 150,
-                  width: 120,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 150,
-                  width: 120,
-                  color: Colors.blue,
-                ),
-                Container(
-                  height: 150,
-                  width: 120,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 150,
-                  width: 120,
-                  color: Colors.blue,
-                ),
-              ],
+          Container(
+            width: double.infinity,
+            height: 170,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  MyStory(myStory: 'images/6.jpg'),
+                  FriendStory(
+                      FriendStory: 'images/2.jpg',
+                      proName: 'Twumasi Henry',
+                      proPic: 'images/2.jpg'),
+                  FriendStory(
+                      FriendStory: 'images/15.jpg',
+                      proName: 'Peter Asamaoh',
+                      proPic: 'images/15.jpg'),
+                  FriendStory(
+                      FriendStory: 'images/3.jpg',
+                      proName: 'Asamoah Godfred',
+                      proPic: 'images/3.jpg'),
+                  FriendStory(
+                      FriendStory: 'images/4.jpg',
+                      proName: 'Nkrumah Emma',
+                      proPic: 'images/4.jpg'),
+                  FriendStory(
+                      FriendStory: 'images/7.jpg',
+                      proName: 'Osei Lydia',
+                      proPic: 'images/4.jpg'),
+                ],
+              ),
             ),
+          ),
+          Row(
+            children: [
+              Container(
+                width: 390,
+                height: 10,
+                color: Colors.black26,
+              ),
+            ],
           ),
         ],
       ),
