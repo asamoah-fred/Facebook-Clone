@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:facebook/constants/story.dart';
-
-myStory() {}
+import 'package:facebook/constants/my_story.dart';
+import 'package:facebook/constants/friend_post.dart';
+import 'package:facebook/constants/friend_story.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -203,7 +203,7 @@ class HomeScreen extends StatelessWidget {
 
           // 3rd Layer Closed
 
-          // 4th Layer Open (Story)
+          // 4th Layer Open (Story & Friends)
 
           Container(
             width: double.infinity,
@@ -237,6 +237,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
+//   Divider
           Row(
             children: [
               Container(
@@ -246,6 +247,12 @@ class HomeScreen extends StatelessWidget {
               ),
             ],
           ),
+
+// Post Layer Open
+
+          FriendPost(),
+
+// Post Layer Closed
         ],
       ),
     );
