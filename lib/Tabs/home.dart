@@ -253,17 +253,17 @@ class HomeScreen extends StatelessWidget {
           FriendPost(
             proPic: 'images/autumn_30.jpg',
             proName: 'Agyei Hannah',
-            dateAndLocation: 'yesterday at 9AM, Berlin',
+            dateAndLocation: 'Now, Berlin',
           ),
           FriendPost(
             proPic: 'images/autumn_27.jpg',
             proName: 'Asamoah Micael',
-            dateAndLocation: 'today at 3AM, Kyiv',
+            dateAndLocation: '6h, Kyiv',
           ),
           FriendPost(
             proPic: 'images/autumn_29.jpg',
             proName: 'Junior Tinho',
-            dateAndLocation: 'yesterday at 5PM, New York',
+            dateAndLocation: '2days, New York',
           ),
           FriendPost(
             proPic: 'images/autumn_18.jpg',

@@ -10,7 +10,7 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
       children: [
         Container(
           width: 390,
-          height: 510,
+          height: 550,
           // color: Colors.blue,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -108,23 +108,79 @@ Widget FriendPost({proPic, proName, dateAndLocation}) {
               ),
               Container(
                 width: 390,
-                height: 390,
-                color: Colors.brown,
+                height: 400,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 20,
+                      width: 390,
+                      color: Colors.blue,
+                      child: Text("aaaaaaa"),
+                    ),
+                    Container(
+                      height: 380,
+                      width: 390,
+                      color: Colors.pink,
+                      child: Image(
+                        image: AssetImage('images/autumn_22.jpg'),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
                 width: 390,
-                height: 20,
-                color: Colors.green,
+                height: 30,
+                child: Row(
+                  children: [
+                    Container(
+                      width: 130,
+                      height: 30,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.thumb_up,
+                              size: 20,
+                              color: Colors.blue,
+                            ),
+                          ),
+                          Text(
+                            "Like",
+                            style: TextStyle(),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      width: 130,
+                      height: 30,
+                      color: Colors.red,
+                    ),
+                    Container(
+                      width: 130,
+                      height: 30,
+                      color: Colors.blue,
+                    ),
+                  ],
+                ),
               ),
               Container(
                 width: 390,
                 height: 30,
                 color: Colors.pink,
               ),
-              Container(
-                width: 390,
-                height: 5,
-                color: Colors.blue,
+              Padding(
+                padding: const EdgeInsets.only(top: 5, bottom: 5),
+                child: Container(
+                  width: 390,
+                  height: 5,
+                  color: Colors.black26,
+                ),
               ),
             ],
           ),
