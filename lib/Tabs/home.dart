@@ -259,15 +259,15 @@ class HomeScreen extends StatelessWidget {
               caption: 'I love Myself',
               post: 'images/35.jpg'),
           FriendPost(
-              proPic: 'images/27.jpg',
+              proPic: 'images/99.jpg',
               proName: 'Asamoah Micael',
               dateAndLocation: '6h, Kyiv',
               comments: 'Comments 5k',
               like: '7k',
               caption: 'Love is Wicked',
-              post: 'images/32.jpg'),
+              post: 'images/22.jpg'),
           FriendPost(
-              proPic: 'images/29.jpg',
+              proPic: 'images/80.jpg',
               proName: 'Junior Tinho',
               dateAndLocation: '2days, New York',
               comments: 'Comments 10',
