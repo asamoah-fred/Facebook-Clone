@@ -257,17 +257,17 @@ class HomeScreen extends StatelessWidget {
               comments: 'Comments 400',
               like: '1k',
               caption: 'I love Myself',
-              post: 'images/autumn_35.jpg'),
+              post: 'images/35.jpg'),
           FriendPost(
-              proPic: 'images/autumn_27.jpg',
+              proPic: 'images/27.jpg',
               proName: 'Asamoah Micael',
               dateAndLocation: '6h, Kyiv',
               comments: 'Comments 5k',
               like: '7k',
               caption: 'Love is Wicked',
-              post: 'images/autumn_32.jpg'),
+              post: 'images/32.jpg'),
           FriendPost(
-              proPic: 'images/autumn_29.jpg',
+              proPic: 'images/29.jpg',
               proName: 'Junior Tinho',
               dateAndLocation: '2days, New York',
               comments: 'Comments 10',
@@ -275,13 +275,13 @@ class HomeScreen extends StatelessWidget {
               caption: 'Bored',
               post: 'images/11.jpg'),
           FriendPost(
-              proPic: 'images/autumn_18.jpg',
+              proPic: 'images/18.jpg',
               proName: 'Asamoah Peter',
               dateAndLocation: 'yesterday at 2PM, UK',
               comments: 'Comments 24k',
               like: '5k',
               caption: 'Hungry',
-              post: 'images/7.jpg'),
+              post: 'images/97.jpg'),
           FriendPost(
               proPic: 'images/1.jpg',
               proName: 'Asamoah Vivian',
@@ -289,7 +289,7 @@ class HomeScreen extends StatelessWidget {
               comments: 'Comments 2',
               like: '10',
               caption: '',
-              post: 'images/5.jpg'),
+              post: 'images/45.jpg'),
 
 // Post Layer Closed
         ],
