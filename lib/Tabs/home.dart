@@ -224,7 +224,7 @@ class HomeScreen extends StatelessWidget {
                   FriendStory(
                       FriendStory: 'images/3.jpg',
                       proName: 'Asamoah Godfred',
-                      proPic: 'images/autumn_20.jpg'),
+                      proPic: 'images/20.jpg'),
                   FriendStory(
                       FriendStory: 'images/4.jpg',
                       proName: 'Nkrumah Emma',
@@ -251,7 +251,7 @@ class HomeScreen extends StatelessWidget {
 // Post Layer Open
 
           FriendPost(
-              proPic: 'images/autumn_30.jpg',
+              proPic: 'images/30.jpg',
               proName: 'Agyei Hannah',
               dateAndLocation: 'Now, Berlin',
               comments: 'Comments 400',
