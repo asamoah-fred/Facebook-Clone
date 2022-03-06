@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:facebook/constants/my_story.dart';
 import 'package:facebook/constants/friend_post.dart';
 import 'package:facebook/constants/friend_story.dart';
+import 'package:facebook/stories/post.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -296,11 +297,11 @@ class HomeScreen extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(top: 5),
               child: InkWell(
-                onTap:() {
+                onTap: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) =>
+                      builder: (context) => Post(),
                     ),
                   );
                 },
