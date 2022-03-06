@@ -1,4 +1,4 @@
-##SIMPLE FACEBOOK UI##
+#SIMPLE FACEBOOK UI
 
 ![3](https://user-images.githubusercontent.com/96062970/156944040-42f0292e-b107-4253-a824-54f72a7d14ea.png)
 
