@@ -292,6 +292,37 @@ class HomeScreen extends StatelessWidget {
               post: 'images/45.jpg'),
 
 // Post Layer Closed
+          Center(
+            child: Padding(
+              padding: const EdgeInsets.only(top: 5),
+              child: InkWell(
+                onTap:() {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) =>
+                    ),
+                  );
+                },
+                child: Text(
+                  "More",
+                  style: TextStyle(
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          Row(
+            children: [
+              Container(
+                width: 390,
+                height: 10,
+                color: Colors.black26,
+              ),
+            ],
+          ),
         ],
       ),
     );
