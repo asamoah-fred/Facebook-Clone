@@ -269,7 +269,7 @@ class HomeScreen extends StatelessWidget {
               post: 'images/22.jpg'),
           FriendPost(
               proPic: 'images/80.jpg',
-              proName: 'Junior Tinho',
+              proName: 'Emmanuella Os',
               dateAndLocation: '2days, New York',
               comments: 'Comments 10',
               like: '200',
